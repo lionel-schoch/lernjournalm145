@@ -1,0 +1,3 @@
+# Woche 20 (11.05.2026)
+Diese Woche wurde uns das Projekt vorgestellt. Der ganze Tag bestand aus dem Einlesen und Einarbeiten in das neue Modul. Da die Modulbewerbung aus einem 50 Prozentigen Anzeil aus der Dokumentation besteht, habe ich viel Zeit in den aufbau meines Repos gesteckt. Das Repo habe ich in zwei Abschnitte unterteilt.In 01_Lernjournal werde ich jede Woche ein kurzer Lernjournal schreiben, so dass ich so viel wie möglich aus den letzten Wochen mitnehmen kann.
+Im Ordner 02_Dokumentation habe ich Die einzelnen Themen. Jedes Thema besteht aus einer Abgabe und möglichem Troubleshooting.
