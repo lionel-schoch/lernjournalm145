@@ -218,17 +218,24 @@ Das Projekt ist für drei Wochen mit je vier Lektionen geplant.
 | 2 | 4 | VLANs, Routing, Ports und erste Tests | Grundnetz funktioniert |
 | 3 | 4 | WLAN, Standortverbindung, Tests und Dokumentation | Projekt abgeschlossen und dokumentiert |
 
-## 16. Abschlusskriterien
+## 16. Aktueller Zwischenstand
 
-Das Projekt gilt als abgeschlossen, wenn:
+Die Grundidee und die Planung des Schulnetzwerks sind erstellt. Die wichtigsten Bereiche wie VLANs, IP-Adressierung, WLAN, Aussenstelle und Zugriffskonzept sind definiert. In Cisco Packet Tracer wurde die Umsetzung bereits begonnen.
 
-- die geplante Topologie in Packet Tracer umgesetzt ist
-- VLANs und IP-Adressen korrekt eingerichtet sind
-- interne und externe Bereiche sinnvoll getrennt sind
-- die Aussenstelle erreichbar ist
-- die wichtigsten Tests dokumentiert sind
-- die Dokumentation kurz, verständlich und vollständig ist
+Aktuell liegt der Fokus auf dem Aufbau der Topologie und der VLAN-Konfiguration am Core-Switch. Erste Nachweise wurden mit Screenshots festgehalten. Die Dokumentation wird parallel zur technischen Umsetzung laufend ergänzt.
 
-## 17. Reflexion
+| Bereich | Zwischenstand |
+|---|---|
+| Planung | Grundstruktur ist definiert |
+| IP-Adressierung | VLAN-Netze und Gateways sind festgelegt |
+| Topologie | in Packet Tracer aufgebaut bzw. in Bearbeitung |
+| Core-Switch | erste Konfiguration begonnen |
+| WLAN | geplant, Umsetzung noch offen |
+| Standortverbindung | geplant, Umsetzung noch offen |
+| Tests | Testplan vorhanden, Durchführung folgt |
 
-Die Reflexion wird nach Abschluss der Umsetzung ergänzt. Sie soll kurz festhalten, was gut funktioniert hat, wo Schwierigkeiten aufgetreten sind und welche Punkte in einer realen Umgebung zusätzlich berücksichtigt werden müssten.
+## 17. Offene Fragen
+
+Mit zwei Fragen beschäftige ich mich schon seit Längerem:
+- Werden die VLAN auf dem Router oder dem Switch hinterlegt? Ich habe gesehen, dass beides möglich ist, aber ich habe immer wieder die Lösung mit dem Switch gesehen. Ich finde es jedoch besser, wenn die VLANs auf dem Router schon definiert werden.
+-  Werden zwischen den VLANs verschiedene Subnets gebraucht oder oder spielt das keine Rolle?
