@@ -239,3 +239,54 @@ Aktuell liegt der Fokus auf dem Aufbau der Topologie und der VLAN-Konfiguration 
 Mit zwei Fragen beschäftige ich mich schon seit Längerem:
 - Werden die VLAN auf dem Router oder dem Switch hinterlegt? Ich habe gesehen, dass beides möglich ist, aber ich habe immer wieder die Lösung mit dem Switch gesehen. Ich finde es jedoch besser, wenn die VLANs auf dem Router schon definiert werden.
 -  Werden zwischen den VLANs verschiedene Subnets gebraucht oder oder spielt das keine Rolle?
+
+
+## Testfälle Projekt 1
+
+### Testfall 1: Admin-PC erreicht das Gateway
+
+| Punkt | Beschreibung |
+|---|---|
+| Ziel | Prüfen, ob VLAN 20 korrekt funktioniert |
+| Quelle | PC-ADMIN, 192.168.20.10 |
+| Ziel | Gateway, 192.168.20.1 |
+| Befehl | `ping 192.168.20.1` |
+| Erwartung | Ping funktioniert |
+
+Ich habe zuerst den Admin-PC getestet. Die IP-Adresse, Subnetzmaske und das Gateway waren korrekt eingetragen. Danach habe ich das Gateway angepingt.
+
+**Ergebnis:** Der Ping war erfolgreich. Der Admin-PC ist im richtigen VLAN und erreicht sein Gateway.
+
+### Testfall 2: Schüler-PC darf den Admin-PC nicht erreichen
+
+| Punkt | Beschreibung |
+|---|---|
+| Ziel | Prüfen, ob das Administrationsnetz geschützt ist |
+| Quelle | PC-SCHUELER, 192.168.40.10 |
+| Ziel | PC-ADMIN, 192.168.20.10 |
+| Befehl | `ping 192.168.20.10` |
+| Erwartung | Ping wird blockiert |
+
+Ich habe vom Schüler-PC aus den Admin-PC angepingt. Dieser Zugriff sollte nicht möglich sein, weil das Schülernetz keinen Zugriff auf administrative Geräte haben darf.
+
+**Ergebnis:** Der Ping wurde blockiert. Die Trennung zwischen Schülernetz und Administration funktioniert.
+
+### Testfall 3: Verbindung zur Aussenstelle
+
+| Punkt | Beschreibung |
+|---|---|
+| Ziel | Prüfen, ob Hauptstandort und Aussenstelle verbunden sind |
+| Quelle | PC-ADMIN, 192.168.20.10 |
+| Ziel | PC-BR-LEHRER, 192.168.80.10 |
+| Befehl | `ping 192.168.80.10` |
+| Erwartung | Ping funktioniert |
+
+Ich habe vom Admin-PC einen Client in der Aussenstelle angepingt. Damit wollte ich prüfen, ob die WAN-Verbindung und das Routing zwischen den Routern korrekt funktionieren.
+
+**Ergebnis:** Der Ping war erfolgreich. Die Aussenstelle ist vom Hauptstandort aus erreichbar.
+
+## 19. Persönlicher Lernprozess
+
+Ich persönlich habe bei diesem Projekt schon sehr viel über VLANs und den Cisco Paket Tracer gelernt. Für das Modul habe ich mir bewusst vorgenommen, alles mit dem Cisco Packet Tracer zu machen, da ich bisher noch nicht wirklich die Gelegenheit hatte, mich mit diesem Programm vertraut zu machen. Daher lerne ich bei der Arbeit mit dem Programm sehr viel über diese Applikation.
+Auch mit VLANs hatte ich bisher noch nie zu tun und in der Schule wurde das Thema nie ausführlich behandelt. Daher ist dies auch ein ziemlich neues Terrain für mich.
+
