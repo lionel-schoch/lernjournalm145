@@ -1,18 +1,18 @@
-# Tests
+﻿# Tests
 
 ## Ziel der Tests
 
-Die Tests pruefen, ob der IPsec Site-to-Site-VPN-Tunnel zwischen Hauptstandort und Aussenstelle korrekt aufgebaut ist und ob tatsaechlich Datenverkehr zwischen den Standorten moeglich ist.
+Die Tests prüfen, ob der IPsec Site-to-Site-VPN-Tunnel zwischen Hauptstandort und Aussenstelle korrekt aufgebaut ist und ob tatsaechlich Datenverkehr zwischen den Standorten möglich ist.
 
-## Testuebersicht
+## Testübersicht
 
 | Nr. | Test | Erwartetes Ergebnis | Nachweis |
 | --- | --- | --- | --- |
-| 1 | Routing auf beiden Routern pruefen | Beide Router kennen ihr lokales Netz, das WAN-Netz und eine Default Route zur Internet-Gegenstelle. | `show ip route` |
-| 2 | ACL fuer interessanten Traffic pruefen | Die ACL erlaubt den Verkehr zwischen den internen Standortnetzen. | `show access-lists` |
-| 3 | ISAKMP-SA pruefen | Die ISAKMP Security Association ist aktiv. | `show crypto isakmp sa` |
-| 4 | IPsec-SA pruefen | ESP-SAs sind aktiv und Paketzaehler zeigen verschluesselten Verkehr. | `show crypto ipsec sa` |
-| 5 | Crypto Map pruefen | Peer, ACL, Transform-Set und WAN-Interface sind in der Crypto Map eingetragen. | `show crypto map` |
+| 1 | Routing auf beiden Routern prüfen | Beide Router kennen ihr lokales Netz, das WAN-Netz und eine Default Route zur Internet-Gegenstelle. | `show ip route` |
+| 2 | ACL für interessanten Traffic prüfen | Die ACL erlaubt den Verkehr zwischen den internen Standortnetzen. | `show access-lists` |
+| 3 | ISAKMP-SA prüfen | Die ISAKMP Security Association ist aktiv. | `show crypto isakmp sa` |
+| 4 | IPsec-SA prüfen | ESP-SAs sind aktiv und Paketzähler zeigen verschlüsselten Verkehr. | `show crypto ipsec sa` |
+| 5 | Crypto Map prüfen | Peer, ACL, Transform-Set und WAN-Interface sind in der Crypto Map eingetragen. | `show crypto map` |
 | 6 | Funktionalen Zugriff testen | Ein Client der Aussenstelle kann einen Dienst am Hauptstandort erreichen. | HTTPS-Test im Browser |
 
 ## Test 1: Routing
@@ -25,7 +25,7 @@ Auf `R-HQ-SCHULE-02` ist das lokale Netz `10.10.0.0/24`, das WAN-Netz `200.169.1
 
 Nachweis: ![show_ip_route_von_R-HQ-SCHULE-02.png](../assets/screenshots/vpn/show_ip_route_von_R-HQ-SCHULE-02.png)
 
-Bewertung: Routing ist fuer die WAN-Erreichbarkeit vorhanden.
+Bewertung: Routing ist für die WAN-Erreichbarkeit vorhanden.
 
 ## Test 2: Access Lists
 
@@ -37,7 +37,7 @@ Auf `R-HQ-SCHULE-02` ist die Gegenrichtung sichtbar. Der Screenshot zeigt zudem 
 
 Nachweis: ![show_access-lists_ovn_R-HQ-SCHULE-02.png](../assets/screenshots/vpn/show_access-lists_ovn_R-HQ-SCHULE-02.png)
 
-Bewertung: Der interessante Traffic fuer den VPN-Tunnel ist definiert und wird verwendet.
+Bewertung: Der interessante Traffic für den VPN-Tunnel ist definiert und wird verwendet.
 
 ## Test 3: ISAKMP Security Association
 
@@ -52,7 +52,7 @@ Bewertung: Phase 1 des VPNs wurde erfolgreich aufgebaut.
 
 ## Test 4: IPsec Security Association
 
-Die Ausgabe `show crypto ipsec sa` zeigt aktive ESP-SAs. Auf den Screenshots sind Paketzaehler fuer verschluesselte und entschluesselte Pakete sichtbar.
+Die Ausgabe `show crypto ipsec sa` zeigt aktive ESP-SAs. Auf den Screenshots sind Paketzähler für verschlüsselte und entschlüsselte Pakete sichtbar.
 
 | Router | Nachweis | Bewertung |
 | --- | --- | --- |
@@ -82,4 +82,5 @@ Bewertung: Der End-to-End-Test ist erfolgreich.
 
 ## Fazit
 
-Alle relevanten VPN-Nachweise sind vorhanden. Routing, ACLs, Crypto Maps, ISAKMP-SA und IPsec-SA sind dokumentiert. Der HTTPS-Test bestaetigt die praktische Funktion der Verbindung zwischen den Standorten.
+Alle relevanten VPN-Nachweise sind vorhanden. Routing, ACLs, Crypto Maps, ISAKMP-SA und IPsec-SA sind dokumentiert. Der HTTPS-Test bestätigt die praktische Funktion der Verbindung zwischen den Standorten.
+
