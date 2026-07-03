@@ -90,7 +90,7 @@ Die Aussenstelle wird in Packet Tracer über eine WAN-Verbindung dargestellt. Fa
 
 ## 7. Geräte und Namen
 
-| Gerät | Name | Zweck |
+| Gerät | Name | IP |
 |---|---|---|
 | Router Hauptstandort | R-HQ-SCHULE | Routing und Verbindung zur Aussenstelle |
 | Router Aussenstelle | R-BR-SPORT | Verbindung zum Hauptstandort |
@@ -98,7 +98,15 @@ Die Aussenstelle wird in Packet Tracer über eine WAN-Verbindung dargestellt. Fa
 | Switch Aussenstelle | SW-BR-SPORT | Anschluss der Geräte vor Ort |
 | Server | SRV-INTRANET | interner Dienst, zum Beispiel Schulportal |
 | Access Point intern | AP-INTERN-01 | internes WLAN |
-| Access Point Gäste | AP-GUEST-01 | Gäste-WLAN |
+| PC | PC-LEHRER-01 | 192.168.10.10 |
+| PC | PC-LEHRER-02 | 192.168.10.11 |
+| PC | PC-LEHRER-03 | 192.168.10.12 |
+| PC | PC-SCHUELER-01 | 192.168.20.10 |
+| PC | PC-SCHUELER-02 | 192.168.20.11 |
+| PC | PC-ADMIN-01 | 192.168.40.10 |
+| PC | AP-GUEST-01 | 192.168.10.10 |
+| PC | AP-GUEST-02 | 192.168.10.11 |
+
 
 Die Namen sind bewusst kurz und sprechend gewählt, damit die Dokumentation auch ohne zusätzliche Erklärung verständlich bleibt.
 
@@ -106,17 +114,13 @@ Die Namen sind bewusst kurz und sprechend gewählt, damit die Dokumentation auch
 
 Für das Projekt wird der private Adressbereich `192.168.0.0/16` verwendet. Jedes VLAN erhält ein eigenes `/24`-Subnetz. Die Gateway-Adresse ist jeweils die erste nutzbare Adresse.
 
-| VLAN | Name | Subnetz | Gateway | Zweck |
-|---:|---|---|---|---|
-| 10 | Management | 192.168.10.0/24 | 192.168.10.1 | Verwaltung der Netzwerkgeräte |
-| 20 | Administration | 192.168.20.0/24 | 192.168.20.1 | Sekretariat und Schulleitung |
-| 30 | Lehrer | 192.168.30.0/24 | 192.168.30.1 | Geräte der Lehrpersonen |
-| 40 | Schüler | 192.168.40.0/24 | 192.168.40.1 | Geräte der Schülerinnen und Schüler |
-| 50 | Gäste | 192.168.50.0/24 | 192.168.50.1 | Gäste-WLAN |
-| 60 | Server | 192.168.60.0/24 | 192.168.60.1 | interne Dienste |
-| 70 | WLAN-Intern | 192.168.70.0/24 | 192.168.70.1 | interne WLAN-Geräte |
-| 80 | Aussenstelle | 192.168.80.0/24 | 192.168.80.1 | Geräte der Aussenstelle |
-| 99 | Native-Blackhole | kein DHCP | - | Native VLAN und ungenutzte Ports |
+| VLAN | Name | Subnetz | Gateway |
+|---:|---|---|---|
+| 10 | Lehrer | 192.168.10.0/24 | 192.168.10.1 |
+| 20 | Schüler | 192.168.20.0/24 | 192.168.20.1 |
+| 30 | Gäste | 192.168.30.0/24 | 192.168.30.1 |
+| 40 | Admin | 192.168.40.0/24 | 192.168.40.1 |
+
 
 ## 9. Portstruktur
 
@@ -124,16 +128,15 @@ Die Portstruktur wird während der Umsetzung bei Bedarf angepasst.
 
 | Gerät | Port | Verbindung | Modus | VLAN |
 |---|---|---|---|---|
-| SW-CORE-01 | G0/1 | R-HQ-SCHULE | Trunk | 10,20,30,40,50,60,70,99 |
-| SW-CORE-01 | F0/1 | PC-ADMIN | Access | 20 |
-| SW-CORE-01 | F0/2 | PC-LEHRER | Access | 30 |
-| SW-CORE-01 | F0/3 | PC-SCHUELER | Access | 40 |
-| SW-CORE-01 | F0/4 | SRV-INTRANET | Access | 60 |
-| SW-CORE-01 | F0/5 | AP-INTERN-01 | Access | 70 |
-| SW-CORE-01 | F0/6 | AP-GUEST-01 | Access | 50 |
-| SW-BR-SPORT | F0/1 | R-BR-SPORT | Access | 80 |
-| SW-BR-SPORT | F0/2 | PC-BR-LEHRER | Access | 80 |
-| SW-BR-SPORT | F0/3 | PC-BR-SCHUELER | Access | 80 |
+| SW-CORE-01 | G0/1 | R-HQ-SCHULE | Trunk | - |
+| SW-CORE-01 | F0/1 | PC-LEHRER-01 | Access | 10 |
+| SW-CORE-01 | F0/2 | PC-SCHUELER-01 | Access | 20 |
+| SW-CORE-01 | F0/3 | AP-GUEST-01 | Access | 30 |
+| SW-CORE-01 | F0/4 | PC-ADMIN-01 | Access | 40 |
+| SW-CORE-01 | F0/5 | PC-LEHRER-02 | Access | 10 |
+| SW-BR-SPORT | F0/1 | PC-LEHRER-03 | Access | 10 |
+| SW-BR-SPORT | F0/2 | PC-SCHUELER-02 | Access | 20 |
+| SW-BR-SPORT | F0/3 | AP-GUEST-01 | Access | 30 |
 
 ## 10. WLAN-Konzept
 
