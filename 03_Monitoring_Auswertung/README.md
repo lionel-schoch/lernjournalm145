@@ -12,6 +12,12 @@ Dieser Bereich ist für den Kompetenzteil **Überwachung und Auswertung** vorges
 | [auswertung.md](auswertung.md) | Interpretation der Messwerte |
 | [reflexion.md](reflexion.md) | persönliche Auswertung des Monitoring-Teils |
 
+## Schritt-für-Schritt-Anleitung
+
+Die konkrete Anleitung für ein VPN-Monitoring mit WireGuard, Prometheus und Grafana ist hier dokumentiert:
+
+[Monitoring-Konzept: WireGuard + Grafana](monitoring_konzept.md#schritt-für-schritt-anleitung-wireguard--grafana)
+
 ## Bezug zum Projekt
 
 Im Schulnetzwerk sind besonders diese Werte relevant:

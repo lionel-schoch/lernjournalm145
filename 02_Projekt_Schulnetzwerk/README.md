@@ -6,13 +6,13 @@ In diesem Projekt habe ich ein Schulnetzwerk mit Hauptstandort und Aussenstelle 
 
 | Bereich | Inhalt | Link |
 | --- | --- | --- |
-| Ausgangslage und Ziele | Szenario, Projektziele und Anforderungen aus Modul 145 | [01_Ausgangslage_und_Ziele](01_Ausgangslage_und_Ziele/) |
-| Netzwerkdokumentation | Topologie, Geräteliste, IP-Adressierung, VLAN-Übersicht und Sicherheitskonzept | [02_Netzwerkdokumentation](02_Netzwerkdokumentation/) |
-| VLAN | VLAN-Konzept, Konfiguration, Trunking, Inter-VLAN-Routing und Tests | [03_VLAN](03_VLAN/) |
-| WLAN | WLAN-Konzept, SSID-/VLAN-Mapping, Sicherheit und Tests | [04_WLAN](04_WLAN/) |
-| VPN | IPsec Site-to-Site-VPN, Konfiguration und Nachweise | [05_VPN](05_VPN/) |
-| Test und Validierung | Testplan, Testprotokoll und Troubleshooting | [06_Test_und_Validierung](06_Test_und_Validierung/) |
-| Reflexion | Lernprozess, Probleme/Lösungen und Fazit | [07_Reflexion](07_Reflexion/) |
+| Ausgangslage und Ziele | Szenario, Projektziele und Anforderungen aus Modul 145 | [01_Ausgangslage_und_Ziele](01_Ausgangslage_und_Ziele/README.md) |
+| Netzwerkdokumentation | Topologie, Geräteliste, IP-Adressierung, VLAN-Übersicht und Sicherheitskonzept | [02_Netzwerkdokumentation](02_Netzwerkdokumentation/README.md) |
+| VLAN | VLAN-Konzept, Konfiguration, Trunking, Inter-VLAN-Routing und Tests | [03_VLAN](03_VLAN/README.md) |
+| WLAN | WLAN-Konzept, SSID-/VLAN-Mapping, Sicherheit und Tests | [04_WLAN](04_WLAN/README.md) |
+| VPN | IPsec Site-to-Site-VPN, Konfiguration und Nachweise | [05_VPN](05_VPN/README.md) |
+| Test und Validierung | Testplan, Testprotokoll und Troubleshooting | [06_Test_und_Validierung](06_Test_und_Validierung/README.md) |
+| Reflexion | Lernprozess, Probleme/Lösungen und Fazit | [07_Reflexion](07_Reflexion/README.md) |
 | Screenshots | Beweise zu VLAN, WLAN und VPN | [assets/screenshots/README.md](assets/screenshots/README.md) |
 | Diagramme | Netzwerk-Topologie | [assets/diagramme](assets/diagramme/) |
 
