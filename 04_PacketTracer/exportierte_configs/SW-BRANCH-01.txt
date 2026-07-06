@@ -1,0 +1,7 @@
+Hinweis:
+Die finale Konfiguration von SW-BRANCH-01 ist in der Packet-Tracer-Datei
+04_PacketTracer/projekt_schulnetzwerk.pkt enthalten.
+
+Ein separater CLI-Export wurde für die Abgabe nicht vollständig erstellt.
+Die relevanten Standort-, VLAN- und Verbindungstests sind in der Dokumentation
+und in den Screenshots festgehalten.

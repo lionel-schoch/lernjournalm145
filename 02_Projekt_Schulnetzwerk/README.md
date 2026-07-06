@@ -15,6 +15,7 @@ In diesem Projekt habe ich ein Schulnetzwerk mit Hauptstandort und Aussenstelle 
 | Reflexion | Lernprozess, Probleme/Lösungen und Fazit | [07_Reflexion](07_Reflexion/README.md) |
 | Screenshots | Beweise zu VLAN, WLAN und VPN | [assets/screenshots/README.md](assets/screenshots/README.md) |
 | Diagramme | Netzwerk-Topologie | [assets/diagramme](assets/diagramme/) |
+| Packet Tracer | Finale Projektdatei | [../04_PacketTracer/projekt_schulnetzwerk.pkt](../04_PacketTracer/projekt_schulnetzwerk.pkt) |
 
 ## Netzwerkidee
 
@@ -32,6 +33,8 @@ Die Benutzergruppen werden über VLANs logisch getrennt. Der WLAN-/Gastbereich i
 | Nachweis | Beschreibung |
 | --- | --- |
 | [Netzwerk-Topologie](assets/diagramme/netzwerk_topologie.png) | Übersicht über Hauptstandort, Aussenstelle, WAN, VLANs und Geräte |
+| [Draw.io-Diagramm](assets/diagramme/netzwerk_diagram.drawio) | Bearbeitbare Version des Netzwerkdiagramms |
+| [Packet-Tracer-Datei](../04_PacketTracer/projekt_schulnetzwerk.pkt) | Finale Projektdatei für die technische Umsetzung |
 | [VLAN-Screenshots](assets/screenshots/README.md#vlan-nachweise) | VLAN-Liste, Trunk, Access-Ports und Ping-Test |
 | [WLAN-Screenshots](assets/screenshots/README.md#wlan-nachweise) | WLAN-Topologie und Access-Point-Sicherheit |
 | [VPN-Screenshots](assets/screenshots/README.md#vpn-nachweise) | ACLs, Crypto Maps, ISAKMP, IPsec und HTTPS-Test |

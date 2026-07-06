@@ -16,12 +16,10 @@ Dort befindet sich die eigentliche Projektdokumentation mit Topologie, Anforderu
 
 | Ordner | Inhalt |
 | --- | --- |
-| [00_Organisation](00_Organisation/) | Aufgabenstellung, Bewertungsraster und Modulübersicht |
-| [01_Lernjournal](01_Lernjournal/) | Wochenweise Lernjournal-Einträge |
 | [02_Projekt_Schulnetzwerk](02_Projekt_Schulnetzwerk/README.md) | Hauptprojekt mit Schulnetzwerk-Dokumentation |
 | [03_Monitoring_Auswertung](03_Monitoring_Auswertung/README.md) | Bereich für Monitoring und Auswertung |
-| [04_PacketTracer](04_PacketTracer/) | Packet-Tracer-Datei, Backups und exportierte Configs |
-| [99_Abgabe](99_Abgabe/) | Abgabebericht, Checkliste und Eigenleistungsnachweis |
+| [04_PacketTracer](04_PacketTracer/README.md) | Packet-Tracer-Datei, Backups und exportierte Configs |
+| [99_Abgabe](99_Abgabe/README.md) | Abgabebericht, Checkliste, Eigenleistungsnachweis und Selbsteinschätzung |
 
 ## Projektinhalte
 
@@ -35,6 +33,7 @@ Dort befindet sich die eigentliche Projektdokumentation mit Topologie, Anforderu
 | Test und Validierung | [06_Test_und_Validierung](02_Projekt_Schulnetzwerk/06_Test_und_Validierung/) |
 | Reflexion | [07_Reflexion](02_Projekt_Schulnetzwerk/07_Reflexion/) |
 | Screenshots und Nachweise | [assets/screenshots](02_Projekt_Schulnetzwerk/assets/screenshots/README.md) |
+| Packet-Tracer-Datei | [projekt_schulnetzwerk.pkt](04_PacketTracer/projekt_schulnetzwerk.pkt) |
 
 ## Abgabe und Selbstbewertung
 
@@ -61,4 +60,4 @@ Die Dokumentation orientiert sich an den Anforderungen des Moduls 145:
 
 ## Hinweise
 
-Die Umsetzung wurde in Cisco Packet Tracer erstellt. Einige produktive Themen wie reale WLAN-Signalstärke, Langzeitmonitoring oder echte VPN-Performance können in dieser Umgebung nur eingeschränkt abgebildet werden. Diese Grenzen sind in der Dokumentation berücksichtigt.
+Die Umsetzung wurde in Cisco Packet Tracer erstellt. Einige produktive Themen wie reale WLAN-Signalstärke, Langzeitmonitoring oder echte VPN-Performance können in dieser Umgebung nur eingeschränkt abgebildet werden. Diese Grenzen sind in der Dokumentation berücksichtigt. Die zusätzliche Monitoring-Dokumentation zeigt deshalb ergänzend, wie ein reales VPN mit WireGuard, Prometheus und Grafana überwacht werden könnte.

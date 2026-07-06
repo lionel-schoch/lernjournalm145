@@ -6,7 +6,7 @@ Die Anforderungen wurden aus folgenden Quellen abgeleitet:
 
 - Modulrepository: [ch-tbz-it/Stud/m145](https://gitlab.com/ch-tbz-it/Stud/m145)
 - Kompetenzmatrix im GitLab-Repository
-- Bewertungsraster `M145-Bewertungsraster-Protected 1 (1).xlsx`
+- Bewertungsraster mit Selbsteinschätzung: [bewertungsraster_selbsteinschaetzung.xlsx](../../../99_Abgabe/bewertungsraster_selbsteinschaetzung.xlsx)
 
 ## Modulanforderungen
 
