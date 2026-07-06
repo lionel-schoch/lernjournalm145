@@ -19,15 +19,17 @@ Dieses Testprotokoll fasst die durchgeführten und geplanten Validierungen des S
 | T-09 | VPN Phase 1 prüfen | ISAKMP Security Associations sind auf beiden Routern `ACTIVE`. | Bestanden | [Screenshot-Nachweise](../assets/screenshots/README.md) |
 | T-10 | VPN Phase 2 prüfen | IPsec ESP-SAs sind aktiv und Paketzähler sind sichtbar. | Bestanden | [Screenshot-Nachweise](../assets/screenshots/README.md) |
 | T-11 | HTTPS über VPN | `PC-LEHRER-04` erreicht `https://192.168.0.10`. | Bestanden | [httpsconnectionovervpc.png](../assets/screenshots/vpn/httpsconnectionovervpc.png) |
+| T-12 | WLAN-Topologie prüfen | Access Point und WLAN-Clients sind im Packet-Tracer-Projekt sichtbar. | Bestanden | [wlan_topologie_ap_clients.png](../assets/screenshots/wlan/wlan_topologie_ap_clients.png) |
+| T-13 | WLAN-Sicherheit prüfen | `AP-GUEST-02` ist mit WPA2-PSK und AES konfiguriert. | Bestanden | [ap_guest_02_wpa2_config.png](../assets/screenshots/wlan/ap_guest_02_wpa2_config.png) |
 
 ## Noch zu ergänzende Tests
 
 | Nr. | Test | Grund |
 | --- | --- | --- |
-| T-12 | WLAN-/Gast-Client erhält korrekte IP-Adresse | Der WLAN-Bereich soll noch mit eigenem Testnachweis validiert werden. |
-| T-13 | Zugriff Gast/WLAN auf interne Netze prüfen | Sicherheitskonzept soll nachweisen, dass Gastgeräte nicht unnötig interne Ressourcen erreichen. |
-| T-14 | Inter-VLAN-Kommunikation gezielt prüfen | Es soll dokumentiert werden, welche VLANs miteinander kommunizieren dürfen. |
-| T-15 | Monitoring-Werte erfassen | Für den Kompetenzbereich Überwachung sollten Latenz, Paketverlust oder Interface-Status ausgewertet werden. |
+| T-14 | WLAN-/Gast-Client erhält korrekte IP-Adresse | Als zusätzlicher Nachweis wäre ein Client-IP-Screenshot aus dem WLAN-/Gastnetz sinnvoll. |
+| T-15 | Zugriff Gast/WLAN auf interne Netze prüfen | Sicherheitskonzept soll nachweisen, dass Gastgeräte nicht unnötig interne Ressourcen erreichen. |
+| T-16 | Inter-VLAN-Kommunikation gezielt prüfen | Es soll dokumentiert werden, welche VLANs miteinander kommunizieren dürfen. |
+| T-17 | Monitoring-Werte erfassen | Für den Kompetenzbereich Überwachung sollten Latenz, Paketverlust oder Interface-Status ausgewertet werden. |
 
 ## Beobachtungen
 
@@ -39,7 +41,8 @@ Die vorhandenen Tests zeigen, dass die wichtigsten Grundfunktionen funktionieren
 - Routing zwischen Standort und WAN ist vorhanden.
 - VPN Phase 1 und Phase 2 sind aktiv.
 - Ein End-to-End-Zugriff über HTTPS funktioniert.
+- WLAN ist vorhanden und mit WPA2-PSK/AES abgesichert.
 
 ## Bewertung
 
-Die technische Umsetzung ist für VLAN und VPN mit Screenshots belegt. Für eine noch vollständigere Abgabe sollten WLAN/Gast, Inter-VLAN-Regeln und Monitoring zusätzlich mit eigenen Screenshots oder Messwerten ergänzt werden.
+Die technische Umsetzung ist für VLAN, WLAN und VPN mit Screenshots belegt. Für eine noch vollständigere Abgabe sollten ein WLAN-Client-IP-Test, Inter-VLAN-Regeln und Monitoring zusätzlich mit eigenen Screenshots oder Messwerten ergänzt werden.
