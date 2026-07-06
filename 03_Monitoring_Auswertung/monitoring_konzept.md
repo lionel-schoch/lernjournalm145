@@ -7,6 +7,14 @@ Ich möchte die VPN-Verbindung überwachen und nachvollziehbar auswerten. Da Cis
 1. Monitoring im Packet-Tracer-Projekt über CLI und Funktionstests
 2. echtes Monitoring-Lab mit WireGuard, Prometheus und Grafana
 
+## Tatsächlicher Umsetzungsstand
+
+Ich konnte ein WireGuard-VPN auf einer Ubuntu-VM erstellen und starten. Der Screenshot zeigt, dass das Interface `wg0` aktiv ist, auf Port `51820` lauscht und ein Peer mit der erlaubten IP `10.50.0.2/32` eingetragen ist.
+
+![WireGuard VPN Status](assets/wireguard_vpn_status.png)
+
+Damit ist der VPN-Teil der Monitoring-Erweiterung grundsätzlich vorbereitet. Das vollständige Monitoring mit Prometheus und Grafana konnte ich jedoch nicht mehr fertig einrichten. Die folgenden Schritte beschreiben deshalb, wie ich das Monitoring weiter aufgebaut hätte.
+
 ## Variante 1: Monitoring im Packet Tracer
 
 Im Packet-Tracer-Projekt prüfe ich den VPN-Zustand direkt auf den Routern.

@@ -15,6 +15,14 @@ Ich habe mich deshalb für zwei Ebenen entschieden:
 
 Diese Trennung ist für mich sinnvoll, weil sie ehrlich zeigt, was Packet Tracer kann und wo eine echte Monitoring-Lösung notwendig wird.
 
+## Tatsächlicher Stand
+
+Ich konnte ein WireGuard-VPN auf der Ubuntu-VM erstellen und starten. Das Interface `wg0` war aktiv und ein Peer war eingetragen.
+
+![WireGuard VPN Status](assets/wireguard_vpn_status.png)
+
+Das vollständige Monitoring mit Grafana konnte ich nicht mehr fertig umsetzen. Für mich war trotzdem wichtig, den erreichten Stand ehrlich zu dokumentieren und zu erklären, wie das Monitoring in einem nächsten Schritt aufgebaut würde.
+
 ## Grenzen
 
 Folgende Punkte konnte ich in Packet Tracer nicht realistisch messen:

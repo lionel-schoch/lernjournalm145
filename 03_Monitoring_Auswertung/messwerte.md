@@ -4,6 +4,19 @@
 
 In dieser Datei dokumentiere ich, welche Messwerte für die VPN-Überwachung relevant sind. Da Packet Tracer keine echten Grafana-Metriken liefert, unterscheide ich zwischen Packet-Tracer-Nachweisen und Messwerten aus einem möglichen WireGuard-/Grafana-Lab.
 
+## WireGuard-Nachweis
+
+Das WireGuard-VPN konnte auf der Ubuntu-VM gestartet werden. Der Befehl `sudo wg` zeigt:
+
+- Interface `wg0`
+- Listening Port `51820`
+- einen konfigurierten Peer
+- erlaubte Peer-IP `10.50.0.2/32`
+
+![WireGuard VPN Status](assets/wireguard_vpn_status.png)
+
+Das zeigt, dass der VPN-Grundaufbau funktioniert. Die automatische Auswertung über Grafana wurde nicht mehr umgesetzt.
+
 ## Packet-Tracer-Messwerte
 
 | Messpunkt | Methode | Beobachtung | Bewertung |

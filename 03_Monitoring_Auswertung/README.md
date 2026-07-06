@@ -18,6 +18,14 @@ Die konkrete Anleitung für ein VPN-Monitoring mit WireGuard, Prometheus und Gra
 
 [Monitoring-Konzept: WireGuard + Grafana](monitoring_konzept.md#schritt-für-schritt-anleitung-wireguard--grafana)
 
+## Umsetzungsstand
+
+Ich konnte ein WireGuard-VPN auf der Ubuntu-VM erstellen und starten. Der Befehl `sudo wg` zeigt das Interface `wg0`, den Public Key, den Listening Port `51820` sowie einen Peer mit der erlaubten IP `10.50.0.2/32`.
+
+![WireGuard VPN Status](assets/wireguard_vpn_status.png)
+
+Das eigentliche Monitoring mit Grafana konnte ich zeitlich nicht mehr vollständig umsetzen. Deshalb dokumentiere ich in diesem Bereich, wie das Monitoring fachlich aufgebaut worden wäre und welche Messwerte für eine spätere Umsetzung relevant sind.
+
 ## Bezug zum Projekt
 
 Im Schulnetzwerk sind besonders diese Werte relevant:

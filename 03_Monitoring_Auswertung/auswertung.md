@@ -35,6 +35,14 @@ Für ein echtes Monitoring würde ich WireGuard mit Prometheus und Grafana einse
 - Gibt es Paketverlust oder hohe Latenz?
 - Ist der VPN-Server überlastet?
 
+## Umgesetzter Stand
+
+Ich konnte den WireGuard-Tunnel auf der Ubuntu-VM einrichten. Der Screenshot zeigt ein aktives `wg0`-Interface mit Listening Port `51820` und einem Peer.
+
+![WireGuard VPN Status](assets/wireguard_vpn_status.png)
+
+Bis zum Grafana-Dashboard bin ich nicht mehr gekommen. Deshalb kann ich in dieser Abgabe kein echtes Live-Dashboard zeigen. Fachlich ist aber dokumentiert, welche Metriken mit Prometheus und Grafana überwacht werden sollten.
+
 ## Fazit
 
 Die Packet-Tracer-Auswertung zeigt, dass das VPN im Projekt funktioniert. Für produktionsnahes Monitoring ist eine echte Umgebung mit WireGuard, Prometheus und Grafana besser geeignet, weil dort Messwerte automatisch und über Zeit erfasst werden können.
