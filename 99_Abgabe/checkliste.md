@@ -17,6 +17,7 @@
 | Troubleshooting dokumentiert | erledigt | mögliche Fehler und Massnahmen |
 | Monitoring-Konzept ergänzt | erledigt | Packet Tracer plus WireGuard/Grafana |
 | Reflexion erstellt | erledigt | Lernprozess, Probleme, Fazit |
+| Bewertungsraster mit Selbsteinschätzung ergänzt | erledigt | [bewertungsraster_selbsteinschaetzung.xlsx](bewertungsraster_selbsteinschaetzung.xlsx) |
 
 ## Noch optional
 

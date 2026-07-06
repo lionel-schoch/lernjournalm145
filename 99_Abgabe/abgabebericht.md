@@ -31,6 +31,12 @@ Die Screenshots sind hier gesammelt:
 
 Sie belegen VLAN, WLAN und VPN.
 
+Zusätzlich liegt das ausgefüllte Bewertungsraster mit meiner Selbsteinschätzung im Abgabeordner:
+
+[bewertungsraster_selbsteinschaetzung.xlsx](bewertungsraster_selbsteinschaetzung.xlsx)
+
+In der Selbsteinschätzung komme ich auf 19 von 24 Punkten. Daraus ergibt sich als eigene Einschätzung die Note 5.0.
+
 ## Abgabestatus
 
 Die Dokumentation ist strukturiert aufgebaut und so verlinkt, dass die einzelnen Themen schnell auffindbar sind. Die wichtigsten technischen Funktionen wurden mit Screenshots und Testprotokollen belegt.

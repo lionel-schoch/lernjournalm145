@@ -36,6 +36,17 @@ Dort befindet sich die eigentliche Projektdokumentation mit Topologie, Anforderu
 | Reflexion | [07_Reflexion](02_Projekt_Schulnetzwerk/07_Reflexion/) |
 | Screenshots und Nachweise | [assets/screenshots](02_Projekt_Schulnetzwerk/assets/screenshots/README.md) |
 
+## Abgabe und Selbstbewertung
+
+Die finalen Abgabeunterlagen liegen im Ordner [99_Abgabe](99_Abgabe/).
+
+| Dokument | Zweck |
+| --- | --- |
+| [abgabebericht.md](99_Abgabe/abgabebericht.md) | Zusammenfassung der Abgabe |
+| [checkliste.md](99_Abgabe/checkliste.md) | Kontrolle der erledigten und optionalen Punkte |
+| [eigenleistungsnachweis.md](99_Abgabe/eigenleistungsnachweis.md) | Nachweis meiner eigenen Arbeit |
+| [bewertungsraster_selbsteinschaetzung.xlsx](99_Abgabe/bewertungsraster_selbsteinschaetzung.xlsx) | Ausgefülltes Bewertungsraster mit meiner Selbsteinschätzung |
+
 ## Bewertungsbezug
 
 Die Dokumentation orientiert sich an den Anforderungen des Moduls 145:
